@@ -43,7 +43,7 @@ Sign into [LangSmith website](https://smith.langchain.com/) on your browser and 
 ![LangGraph Studio](assets/langgraph_studio.png)
 
 
-**Demo Usage video can be found [here](https://drive.google.com/file/d/1bKYv5_1ReoccnZfbohWsKySeWMOvwAOl/view?usp=sharing)**
+### [Demo Usage Video](https://drive.google.com/file/d/1bKYv5_1ReoccnZfbohWsKySeWMOvwAOl/view?usp=sharing)
 
 ### Agent Workflow
 
