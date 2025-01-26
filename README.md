@@ -1,7 +1,5 @@
 # UnemployeesVs
 
-## Backend
-
 ### Setup
 Create a conda environment with python 3.11
 
