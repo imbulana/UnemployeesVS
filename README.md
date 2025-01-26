@@ -49,13 +49,15 @@ Sign into [LangSmith website](https://smith.langchain.com/) on your browser and 
 
 #### Job Seeker (Unemployee) Facing
 
-This system leverages human-in-the-loop feedback to refine insights by integrating user inputs, ensuring personalized suggestions for improvements to their resume. AI roleplay simulates realistic interviews, allowing the system to evaluate responses, while long-term memory stores insights and improvements for continuous resume enhancement over multiple sessions.
+There are three key aspects in this agent workflow.
 
-- **Long Term Memory**: The "hunter" agent stores various types of long term memory that is related to the user's professional and academic carreer with the goal of creating a candidate persona that mimics user's experiences, skills, and accomplishments.
+- **Long Term Memory**: The "hunter" agent has accese various types of long term memory that is related to the user's professional and academic carreer with the goal of creating a candidate persona that mimics user's experiences, skills, and accomplishments.
 
 - **AI Roleplay**: When a user is ready for apply for a job interview, they can proceeed by simply saying so and the hunter agent will initiate the interview process by creating analysts that will interview a candidate in the user's stead. This involves creating a set of analysts that are informed by the job posting and user's resume. The analysts will begin by asking questions from a candidate that is informed by the user's profile. This interview roleplay will carry on and the analysts will create memos reporting on the strengths and weaknesses of the candidate. A final evaluation of the candidate fit for the job through the lens of each analyst.
 
 - **Human-in-the-Loop**: Before the expert analysts conduct their interviews, the user is prompted to verify that they are satisfied with the personas of the analysts. If the user would like the analysts to focus on a specific aspect of their professional/academic career, the user can simply say so, and the agent will generate appropriate analysts that satisfy the user's requirements. 
+
+This system leverages human-in-the-loop feedback to refine insights by integrating user inputs, ensuring personalized suggestions for improvements to their resume. AI roleplay simulates realistic interviews, allowing the system to evaluate responses, while long-term memory stores insights and improvements for continuous resume enhancement over multiple sessions.
 
 #### Recruitor-Facing
 
