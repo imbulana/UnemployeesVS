@@ -20,7 +20,7 @@ import operator
 from typing import Annotated, List
 
 # Model initialization
-model = ChatOpenAI(model="gpt-4o", temperature=0)
+model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
 
 class ParentState(MessagesState):
