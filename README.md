@@ -36,7 +36,7 @@ Deploy with LangGraph
 
 ```bash
 cd backend/deployment
-langraph built -t hunter-test
+langgraph build -t hunter-test
 docker compose up
 ```
 
