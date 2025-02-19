@@ -4,11 +4,15 @@
 Create a conda environment with python 3.11
 
 ```bash
-conda create -n hunter python=3.11 -y
+conda create -n hunter python=3.11
 conda activate hunter
 ```
-Install the required packages
+Clone this repo and install the required packages
+
 ```bash
+git clone https://github.com/imbulana/UnemployeesVS.git
+
+cd UnemployeesVS
 python3 -m pip install -r requirements.txt
 ```
 
@@ -45,18 +49,18 @@ Sign into [LangSmith website](https://smith.langchain.com/) on your browser and 
 
 ### Agent Workflow
 
-#### Job Seeker (Unemployee) Facing
+#### Job Seeker Facing
 
 There are three key aspects in this agent workflow.
 
-- **Long Term Memory**: The "hunter" agent has accese various types of long term memory that is related to the user's professional and academic carreer with the goal of creating a candidate persona that mimics user's experiences, skills, and accomplishments.
+- **Long Term Memory**: The "hunter" agent has access to various types of long-term memory related to the user's professional and academic career, with the goal of creating a candidate persona that mimics the user's experiences, skills, and accomplishments. 
 
-- **AI Roleplay**: When a user is ready for apply for a job interview, they can proceeed by simply saying so and the hunter agent will initiate the interview process by creating analysts that will interview a candidate in the user's stead. This involves creating a set of analysts that are informed by the job posting and user's resume. The analysts will begin by asking questions from a candidate that is informed by the user's profile. This interview roleplay will carry on and the analysts will create memos reporting on the strengths and weaknesses of the candidate. A final evaluation of the candidate fit for the job through the lens of each analyst.
+- **AI Roleplay**: When a user is ready to apply for a job interview, they can simply say so, and the hunter agent will initiate the interview process by creating analysts who will interview the candidate in the user's stead. This process involves generating a set of analysts informed by the job posting and the user's resume. The analysts will begin by asking questions to the candidate, drawing on the user's profile. The interview roleplay will continue, with the analysts creating memos that report on the candidate's strengths and weaknesses. A final evaluation of the candidate's fit for the job, as assessed by each analyst, will be provided.
 
-- **Human-in-the-Loop**: Before the expert analysts conduct their interviews, the user is prompted to verify that they are satisfied with the personas of the analysts. If the user would like the analysts to focus on a specific aspect of their professional/academic career, the user can simply say so, and the agent will generate appropriate analysts that satisfy the user's requirements. 
+- **Human-in-the-Loop**: Before the expert analysts conduct their interviews, the user is prompted to verify that they are satisfied with the personas of the analysts. If the user wants the analysts to focus on a specific aspect of their professional or academic career, they can simply say so, and the agent will generate appropriate analysts who meet the user's requirements. 
 
-This system leverages human-in-the-loop feedback to refine insights by integrating user inputs, ensuring personalized suggestions for improvements to their resume. AI roleplay simulates realistic interviews, allowing the system to evaluate responses, while long-term memory stores insights and improvements for continuous resume enhancement over multiple sessions.
+This system leverages human-in-the-loop feedback to refine insights by integrating user inputs, ensuring personalized suggestions for improving the user's resume. AI roleplay simulates realistic interviews, allowing the system to evaluate responses, while long-term memory stores insights and improvements for continuous resume enhancement over multiple sessions.
 
-#### Recruitor-Facing
+#### Recruiter Facing
 
-The agentic workflow enables gain a greater and granular understanding of the candidates while requiring minimal effort from the recruiter. Recruiter's are able to get valuable insights into the potential strengths and weaknesses of a candidate via the lens of expert analysts.
+The agentic workflow enables recruiters gain a greater and granular understanding of the candidates while requiring minimal effort. Recruiter's are able to get valuable insights into the potential strengths and weaknesses of a candidate via the lens of expert analysts.
