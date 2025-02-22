@@ -16,19 +16,11 @@ cd UnemployeesVS
 python3 -m pip install -r requirements.txt
 ```
 
-Setup Docker using the instructions found [here](https://docs.docker.com/engine/install) if you do not already have Docker set up
+Setup Docker using the instructions found [here](https://docs.docker.com/engine/install) if you do not already have Docker set up.
 
-To use docker within the conda environment, and user to docker group
+Then, create a `.env` following the `.env-example` with your openAI and LangChain API keys entered.
 
-```bash
-sudo usermod -aG docker $USER
-newgrp docker
-docker ps # verify that you have acces to docker
-```
-
-Create a `.env` following the `.env-example` with your openAI and LangChain API keys entered
-
-Additionally, navigate to `backend/deployment` and create a `docker-compose.yml` file following the `docker-compose-example.yml` file with the API keys filled in
+Additionally, navigate to `backend/deployment` and create a `docker-compose.yml` file following the `docker-compose-example.yml` file with the API keys filled in.
 
 ### Deploy
 
