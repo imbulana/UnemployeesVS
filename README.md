@@ -23,7 +23,7 @@ Then, create a `.env` following the `.env-example` with your openAI and LangChai
 
 Additionally, navigate to `backend/deployment` and create a `docker-compose.yml` file following the `docker-compose-example.yml` file with the API keys filled in.
 
-To use the chat UI for development, install node.js, npm, and pnpm
+To use the chat UI app, install the following packages and dependencies
 
 ```bash
 sudo apt-get update                 # update packages
@@ -46,12 +46,19 @@ langgraph build -t hunter-0
 docker compose up
 ```
 
-Run the chat UI app with
+Run the chat UI app locally
 
 ```bash
 cd frontend
 pnpm dev
 ```
+
+Follow the forwarded port and enter your
+
+- Local deployment URL
+- Graph ID: hunter
+- LangSmith API key
+
 
 You can also interact with the agent via LangGraph studio.
 
