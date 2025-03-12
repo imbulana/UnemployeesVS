@@ -1,6 +1,7 @@
 # UnemployeesVs
 
 ### Setup
+
 Create a conda environment with python 3.11
 
 ```bash
@@ -22,17 +23,39 @@ Then, create a `.env` following the `.env-example` with your openAI and LangChai
 
 Additionally, navigate to `backend/deployment` and create a `docker-compose.yml` file following the `docker-compose-example.yml` file with the API keys filled in.
 
-### Deploy
+To use the chat UI for development, install node.js, npm, and pnpm
 
-Deploy with LangGraph
+```bash
+sudo apt-get update                 # update packages
+sudo apt-get install nodejs npm     # install node.js and npm
+sudo npm install -g pnpm            # install pnpm
+pnpm -v                             # verify installation
+
+cd frontend
+pnpm install                        # install dependencies
+cd ..
+```
+
+### Usage
+
+Deploy locally with LangGraph
 
 ```bash
 cd backend/deployment
-langgraph build -t hunter-test
+langgraph build -t hunter-0
 docker compose up
 ```
 
-Sign into [LangSmith website](https://smith.langchain.com/) on your browser and navigate to the LangGraph Platform tab and launch LangGraph Studio
+Run the chat UI app with
+
+```bash
+cd frontend
+pnpm dev
+```
+
+You can also interact with the agent via LangGraph studio.
+
+To do so, sign in to [LangSmith website](https://smith.langchain.com/) on your browser and navigate to the LangGraph Platform tab and launch LangGraph Studio
 
 ![LangGraph Studio](assets/langgraph_studio.png)
 
